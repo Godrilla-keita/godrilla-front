@@ -11,4 +11,10 @@ npm install -D eslint-plugin-prettier eslint-config-prettier
 
 # https://maasaablog.com/development/frontend/vite/5116/
 npm install -D vite-plugin-checker
+
+npm install vuetify
+npm install @mdi/font -D
+
+# https://chaika.hatenablog.com/entry/2022/05/14/083000
+npm i -D @types/node
 ```
