@@ -17,4 +17,10 @@ npm install @mdi/font -D
 
 # https://chaika.hatenablog.com/entry/2022/05/14/083000
 npm i -D @types/node
+
+npm install vue-router
+
+npm install chart.js@3.1.0
+npm install vue-chart-3
+npm install @types/chart.js
 ```

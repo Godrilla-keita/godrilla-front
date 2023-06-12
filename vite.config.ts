@@ -18,4 +18,5 @@ export default defineConfig({
       '@': `${__dirname}/src`,
     },
   },
+  base: '/godrilla-front/',
 })
