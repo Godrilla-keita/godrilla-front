@@ -24,24 +24,24 @@ withDefaults(
 <template>
   <v-card variant="outlined" class="px-2" style="border: 1px solid lightgray">
     <v-row>
-      <v-col cols="2" sm="2" md="2" lg="2" xl="2">
-        <div :style="$vuetify.display.xs ? 'width:100%;' : 'width: 80%;'">
-          <v-img
-            :src="iconUrl"
-            :class="$vuetify.display.xs ? 'my-1' : 'ma-1'"></v-img>
-        </div>
-      </v-col>
       <v-col>
-        <table>
-          <tr>
-            <td>作成日:</td>
-            <td>{{ createdAt.toLocaleDateString() }}</td>
-          </tr>
-          <tr>
-            <td>更新日:</td>
-            <td>{{ updatedAt.toLocaleDateString() }}</td>
-          </tr>
-        </table>
+        <v-row>
+          <v-col cols="12" sm="6" md="4" lg="4" xl="4">
+            <div :style="$vuetify.display.xs ? 'width:120px;' : 'width: 80%;'">
+              <v-img
+                :src="iconUrl"
+                :class="$vuetify.display.xs ? 'my-1' : 'ma-1'"></v-img>
+            </div>
+          </v-col>
+          <v-col v-if="$vuetify.display.smAndDown">
+            作成日:{{ createdAt.toLocaleDateString() }}<br />
+            更新日:{{ updatedAt.toLocaleDateString() }}
+          </v-col>
+        </v-row>
+      </v-col>
+      <v-col v-if="!$vuetify.display.smAndDown" class="text-caption">
+        作成日:{{ createdAt.toLocaleDateString() }}<br />
+        更新日:{{ updatedAt.toLocaleDateString() }}
       </v-col>
       <v-col class="d-flex justify-end">
         <v-btn icon flat>

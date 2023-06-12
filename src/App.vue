@@ -20,7 +20,7 @@ const drawer = ref(false)
       <template v-slot:append>
         <v-btn>
           <v-icon>mdi-logout</v-icon>
-          ログアウト
+          <span v-if="$vuetify.display.smAndUp">ログアウト</span>
         </v-btn>
       </template>
     </v-app-bar>
