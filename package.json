@@ -11,13 +11,20 @@
     "format": "prettier src/*.{ts,vue} && prettier src/**/*.{ts,vue}"
   },
   "dependencies": {
+    "@types/chart.js": "^2.9.37",
+    "chart.js": "^3.1.0",
     "vue": "^3.2.47",
+    "vue-chart-3": "^3.1.8",
+    "vue-router": "^4.2.2",
     "vuetify": "^3.3.3"
   },
   "devDependencies": {
+    "@mdi/font": "^7.2.96",
+    "@types/node": "^20.2.5",
     "@typescript-eslint/eslint-plugin": "^5.59.9",
     "@typescript-eslint/parser": "^5.59.9",
     "@vitejs/plugin-vue": "^4.1.0",
+    "@volar/vue-language-core": "^1.6.3",
     "@vue/eslint-config-typescript": "^11.0.3",
     "eslint": "^8.42.0",
     "eslint-config-prettier": "^8.0.0",

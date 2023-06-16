@@ -13,4 +13,10 @@ export default defineConfig({
     }),
     vue(),
   ],
+  resolve: {
+    alias: {
+      '@': `${__dirname}/src`,
+    },
+  },
+  base: '/godrilla-front/',
 })
